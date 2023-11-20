@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="bird_2.jpg" class="logo">
+            <ul>
+                <li><a href="#aboutMe">ABOUT ME</a></li>
+                <li><a href="#Education-info">EDUCATION</a></li>
+                <li><a href="#project-info">PROJECTS</a></li>
+                <li><a href="#mycertificates">CERTIFICATES</a></li>
+                <li><a href="#contact-ak">CONTACT</a></li>
+            </ul>   
+        </div>
+
+        <div class="info">
+            <h3>Hello,my name is</h3>
+            <h1>pavana <span> s k</span></h1>
+            <h3>I'am a Full Stack Developer</h3>
+            <a type="pdf" href="Full Stack Web Devalopment.pdf">Download CV</a>
+        </div>
+    </div>
+
+    <!------------------------About me------------------------------------------------>
+    <section class="about" id="aboutMe">
+        <div class="personal">
+            <img src="pavanimg.jpg" alt="Pic1">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Full Stack Developer</h5>
+                <p>"I'm a passionate Full Stack Developer, adept at crafting seamless user
+                     experiences and building robust server-side solutions. With a strong 
+                     foundation in HTML, CSS, and JavaScript for front-end design, and expertise 
+                     in back-end development and database architecture, I bring web projects to
+                      life from concept to execution. I thrive on continuous learning and innovative
+                       problem-solving. Let's collaborate and turn your digital visions into reality 
+                       with a focus on user-friendly, responsive, and cutting-edge technology."
+                </p>
+                <button id="goBackButton">Go Back</button>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            </div>
+        </div>
+    </section>
+     <!------------------Education-------------------------------------------->
+
+     
+     <section class="Education" id="Education-info">
+     <div class="education">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bgedu.avif);
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color:rgb(191, 142, 77);
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+
+        .education h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .education-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .education-item {
+            background-color: #b3cfe0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 45%;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        .go-back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+    <div class="container">
+        <h1>Education Details</h1>
+        <div class="education-info">
+            <div class="education-item">
+                <h2>BE/BTECH</h2>
+                <p>Bapuji institute of Engineering technology Davanagere <br>Electrical and Electronics<br> (Visvesvaraya Technological University)</p>
+                <p>Year of Passing: 2023</p>
+            </div>
+            <div class="education-item">
+                <h2>PUC</h2>
+                <p>SJVP PU College Harihara</p>
+                <p>Year of Passing: 2019</p>
+            </div>
+        </div><br><br>
+        <center>
+            <div class="education-item">
+                <h2>SSLC</h2>
+                <p>Bapuji high School Kunebelakere</p>
+                <p>Year of Passing: 2017</p>
+            </div>
+            <a href="index.html"><button class="go-back-button" onclick="goBack()">Go Back</button></a>
+        </center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </div>
+</section>
+
+    <!-----------------Projects------------------------------------------------>
+
+    <section class="Projects" id="project-info">
+    <div class="projects">
+    <style>
+        .projects body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+
+        .projects {
+            background-image: url(projbg.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container1 {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main1 {
+            padding: 2rem;
+        }
+
+        .projbg h2{
+            background-color: aqua;
+        }
+
+        .main1 p {
+            color: black;
+            background-color: wheat;
+        }
+
+
+        .project-image {
+            width: 75%;
+            max-height: 500px;
+            object-fit: fill;
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #goBackButton {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #goBackButton:hover {
+            background-color: #333;
+        }
+
+
+    </style>
+
+
+
+    <header>
+        <h1>My Project</h1>
+    </header>
+
+    <div class="container1">
+        <div class="main1">
+        <div class="projbg">
+        <h2>“Audio Amplifier”</h2>
+        <p  background-color: aqua;>Amplifier is the generic term used to describe a circuit which produces and 
+          increased version of its input signal. Early audio amplifiers were based on vacuum tubes 
+          and some of these achieved high qualit Most modern audio amplifiers are based on solid 
+          state devices ,but there are still some who prefer tube-based amplifiers, and the valve 
+          sound. The classification of an amplifier depends upon the size of the signal, large or 
+          small, its physical configuration and how it processes the input signal, that is the 
+          relationship between input signal and current flowing in the load. Some important 
+          applications include public address systems, theatrical and concert sound reinforcement, 
+          and domestic sound systems.
+            
+        </p>
+
+        <center><img class="project-image" src="audio amplifier.png" alt="Project Image"></center>
+
+         <br>
+         <br>
+         <br>
+
+         <h2>“Distribution Storage Energy Management in Grid-Tied Micro-grid”</h2>
+         <p  background-color: aqua;>Connecting a storage system (UPS) in parallel to both WG and PV systems is an effective 
+          solution for supplying constant power to a system with a nonlinear load. In addition it will 
+          minimize the dependency of utility grid and increases the use of RES in distribution side. 
+          From the simulation results it is confirmed that the charging and discharging of UPS 
+          during surplus/deficit power in test system minimizes the dependency of utility supply 
+          and charges the UPS at zero cost during surplus power from RES sources.
+         </p>
+         <center><video width="500px" height="300px" controls>
+          <source src="zoom_0-1.mp4" type="video/mp4" >
+          <source src="movie.ogg" type="video/ogg">
+          
+        </video></center>
+
+         <br>
+         <br>
+         <br>
+
+
+        <h2>"Windmill power generation using multi-generator and single rotor"</h2>
+            <p>For thousands of years, people have been using wind energy to do work
+              from traveling around the world on sailboats to milling grain using windmills. 
+              Today, wind is becoming more common as a renewable energy source through 
+              the use of wind turbines.
+          The wind energy is an environment-friendly and efficient source of renewable 
+          energy. The kinetic energy of the wind can be used to do work. This energy is 
+          harnessed by windmill in the past to do mechanical work. This is used for water 
+          lifting pump and generating electricity. To generate the electricity, the rotary 
+          motion of, the windmill is used to turn the turbine of the electric generator. The 
+          output of single windmill is quite small and cannot be used for commercial 
+          purposes. Therefore, a number of windmills are erected over a large area, which 
+          is known as wind energy farm. The each and every windmill is coupled together 
+          to get a electricity for commercial purposes. The windspeed should be higher 
+          than 15 Km/hr.
+            </p>
+
+            <center><img class="project-image" src="windmill.png" alt="Project Image"></center>
+            <a href="index.html"><button id="goBackButton">Go Back</button></a>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!--------------------------------Certificates------------------------------------------------------>
+
+
+<section class="cerificates" id="mycertificates">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .certibg {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(projbg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(110, 92, 47);
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .container2 h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .container2 .certificate-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container2.certificate-item img {
+            width: 550px; /* Adjust */
+            height: 650px; /* Adjus*/
+            object-fit: cover;
+            border-radius: 5px;
+            object-fit: fill;
+            border: 2px solid #242424;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+
+        .container2.go-back-button {
+            background-color: #827e87;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container2.go-back-button:hover {
+            background-color: #4c4a4a;
+        }
+    </style>
+</head>
+
+<div class="certibg">
+    <div class="container2">
+        <h1>My Certificates</h1>
+        <div class="certificates">
+
+            <div class="certificate-item">
+                <img src="IMG20231021102309.jpg" alt="Certificate 1" height="600px" width="500px">
+                <p><strong>Certificate 1</strong></p>
+            </div>
+
+                
+            <div class="certificate-item">
+                <img src="puc.jpg" alt="Certificate 2" height="600px" width="500px">
+                <p><strong>Certificate 2</strong></p>
+            </div>
+
+
+            <div class="certificate-item">
+                <img src="sslc.jpg" alt="Certificate 3" height="600px" width="500px">
+                <p><strong>Certificate 3</strong></p>
+            </div>
+
+            <div class="certificate-item">
+                <img src="53_Pavana s k_Certificate_page-0001.jpg" alt="Certificate 4" height="600px" width="500px">
+                <p><strong>Certificate 4</strong></p>
+            </div>
+
+        </div>
+        <center>
+           <a href="index.html"><button class="go-back-button" onclick="goBack()">Go Back</button></a> 
+        </center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</div>
+</section>
+
+
+
+    <!----------------Contact Me----------------------------------------------->
+    <section class="contact-AK" id="contact-ak">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=">
+            <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+            
+     <style>
+     .contact-AK body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(contbg.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      
+      
+      section {
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .container4 {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+      .section-header {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .section-header h2 {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      
+      .section-header p {
+        color: #FFF;
+      }
+      
+      .row  {
+        display: flex;
+        flwx-wrap : wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .contact-info {
+        width: 50%;
+    }
+      .contact-form{
+        height: auto;
+        width: 500px;
+      }
+       
+      .contact-info-icon {
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+      }
+      
+      .contact-info-icon i {
+        font-size: 30px;
+        line-height: 70px;
+      }
+      
+      .contact-info-content {
+        margin-left: 20px;
+      }
+      
+      .contact-info-content h4 {
+        color: #1da9c0;
+        font-size: 1.4em;
+        margin-bottom: 5px;
+      }
+      
+      .contact-info-content p {
+        color: black;
+        font-size: 1em;
+      }
+      
+      .contact-form {
+        background-color: #fff;
+        padding: 40px;
+        width: 45%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      
+      .contact-form h2 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      .contact-form .input-box {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+      .contact-form .input-box input,
+      .contact-form .input-box textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+      }
+      
+      .contact-form .input-box span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+      
+      .contact-form .input-box input:focus ~ span,
+      .contact-form .input-box textarea:focus ~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+        
+      }
+      
+      .contact-form .input-box input[type="submit"]
+      {
+        width: 100%;
+        background: #00bcd4;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+      }
+      
+      .contact-form .input-box input[type="submit"]:hover
+      {
+        background: #FFF;
+        color: #00bcd4;
+      }
+      
+      @media (max-width: 991px) {
+        section {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        
+        .row {
+          flex-direction: column;
+        }
+        
+        .contact-info {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+        
+        .contact-form {
+          width: 100%;
+        }
+      }
+      </style>
+     </head> 
+
+        <div class="section-header">
+          <div class="container4">
+            <h2>Contact Us</h2>
+            <p>"Have a project in mind or just want to chat about all things tech? I'm here to listen and create. <br>
+                 Get in touch,and let's transform your vision into a functional masterpiece."</p>
+          </div>
+        </div>
+        
+        <div class="container4">
+          <div class="row">
+            
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  <h4>Address</h4>
+                  <p>Gayathri Nagar<br/> Rajajinagar, Bangalore, <br/>560010</p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  <h4>Phone</h4>
+                  <p>9353367235</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa fa-instagram"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  
+                 <a href="https://instagram.com/manasina_payaniga_pavan?igshid=NGVhN2U2NjQ0Yg=="><h4>Instagram</h4></a>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  
+                 <a href="https://www.linkedin.com/in/pavan-s-k-ba312b185?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h4>Linkedian</h4></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form">
+              <form action="https://formspree.io/f/xknlkqjw" method="POST" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                  <input type="text" required="true" name="username" placeholder="Full Name">
+                  
+                </div>
+                
+                <div class="input-box">
+                  <input type="email" required="true" name="email" placeholder="Email">
+                 
+                </div>
+                
+                <div class="input-box">
+                  <textarea required="true" name="comment" placeholder=" Type your Message..."></textarea>
+                 
+                </div>
+                
+                <div class="input-box">
+                  <input type="submit" value="Send" name="submit">
+                </div>
+              </form>
+            </div>
+            <center><a href="index.html"><button id="goBackButton">Go Back</button></a></center>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            
+          </div>
+        </div>
+    </section> 
+   
+</body>
+</html>
